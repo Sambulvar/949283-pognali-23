@@ -13,7 +13,7 @@
     <a class="logo">
       <img class="logo__img" src="img/logo_mobile.svg" width="96" height="15" alt="Логотип &quot;Погнали&quot;">
     </a>
-    <nav class="main-nav main-nav__center">
+    <nav class="page-body__main-nav main-nav">
       <button class="main-nav__toggle">
             <span class="visually-hidden">
               Открыть меню
@@ -145,11 +145,11 @@
           <input class="preference__input" type="text" value="30">
           <input class="preference__input" type="text" value="100">
         </div>
-        <button class="preference__button button">
+        <button class="form-selection__button button">
           Показать
         </button>
       </form>
-      <section class="catalog-hitchickers">
+      <section class="catalog-hitchhikers">
         <h2 class="visually-hidden">
           Каталог попутчиков
         </h2>
@@ -167,7 +167,7 @@
             <a class="card__name" href="#">
               Таня Фирсова
             </a>
-            <div class="card__likes--active">
+            <div class="card__likes card__likes--active">
               <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="15" cy="15.79" r="15" fill="#E2E5F2"/>
                 <g clip-path="url(#clip0)">
@@ -395,12 +395,12 @@
             </button>
           </li>
         </ul>
-        <a class="hitchhikers__readMore" href="№">
+        <a class="catalog-hitchhikers__readMore" href="#">
           Показать еще
         </a>
       </section>
-      <div class="pagination">
-        <button>
+      <div class="paginator">
+        <button class="paginator__button">
           &#9668;
         </button>
         <ul class="paginator__pages">
@@ -425,12 +425,12 @@
             </a>
           </li>
         </ul>
-        <button>
+        <button class="paginator__button">
           &#9658;
         </button>
       </div>
     </main>
-    <footer class="page-footer page-footer__center">
+    <footer class="page-footer">
       <a class="logo">
         <img class="logo__img" src="img/logo_mobile.svg" width="96" height="15" alt="Логотип &quot;Погнали&quot;">
       </a>
