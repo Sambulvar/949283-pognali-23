@@ -1,13 +1,486 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Погнали</title>
-    header {
-    background-color: #182044;
-    }
-  </style>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+    <style>header {
+      background-color: #182044;
+      }
+    </style>
   </head>
-  <body>
+  <body class="page-body">
+    <header class="page-header">
+    <a class="logo">
+      <img class="logo__img" src="img/logo_mobile.svg" width="96" height="15" alt="Логотип &quot;Погнали&quot;">
+    </a>
+    <nav class="main-nav main-nav__center">
+      <button class="main-nav__toggle">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#">
+            О сервисе
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Направления
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            Попутчики
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Каталог для выбора попутчиков
+      </h1>
+      <h2 class="page-main__title">
+        Попутчики
+      </h2>
+      <button class="page-main__buttonToHome visually-hidden">
+        На главную
+        <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 16H28C30.2091 16 32 14.2091 32 12V7C32 4.79086 30.2091 3 28 3H4V5H28C29.1046 5 30 5.89543 30 7V12C30 13.1046 29.1046 14 28 14H4V16Z" fill="white"/>
+          <path d="M0 4L9 0.535898V7.4641L0 4Z" fill="white"/>
+        </svg>
+      </button>
+      <div class="filter-countries">
+        <p class="filter-countries__button">
+          Фильтрация по странам:
+        </p>
+        <ul class="filter-countries__parts visually-hidden">
+          <li class="filter-countries__part">
+            Европа
+          </li>
+          <li class="filter-countries__part">
+            Азия
+          </li>
+          <li class="filter-countries__part">
+            Америка
+          </li>
+          <li class="filter-countries__part">
+            Острова
+          </li>
+        </ul>
+        <button class="filter-countries__showAll">
+          Показать все
+        </button>
+      </div>
+      <form class="form-selection" action="https://echo.htmlacademy.ru">
+        <h3 class="form-selection__title">
+          Подберите идеального попутчика
+        </h3>
+        <div class="form-selection__preference preference">
+          <p class="preference__title">
+            Хобби
+          </p>
+          <label class="preference__label">
+            <input class="preference__checkbox" type="checkbox" name="gym">
+            Спортзал
+          </label>
+          <label class="preference__label">
+            <input class="preference__checkbox" type="checkbox" name="hookah">
+            Кальян
+          </label>
+          <label class="preference__label">
+            <input class="preference__checkbox" type="checkbox" name="couch">
+            Диван
+          </label>
+        </div>
+        <div class="form-selection__preference preference">
+          <p class="preference__title">
+            Музыка
+          </p>
+          <label class="preference__label">
+            <input class="preference__checkbox" type="checkbox" name="">
+            Тяжелый рок
+          </label>
+          <label class="preference__label">
+            <input class="preference__checkbox" type="checkbox" name="">
+            Русский рэп
+          </label>
+          <label class="preference__label">
+            <input class="preference__checkbox" type="checkbox" name="">
+            Евродэнс
+          </label>
+        </div>
+        <div class="form-selection__preference preference">
+          <p class="preference__title">
+            Еда
+          </p>
+          <label class="preference__label">
+            <input class="preference__checkbox" type="checkbox" name="">
+            Мясоед
+          </label>
+          <label class="preference__label">
+            <input class="preference__checkbox" type="checkbox" name="">
+            Сидит на ПП
+          </label>
+          <label class="preference__label">
+            <input class="preference__checkbox" type="checkbox" name="">
+            Веган-сыроед
+          </label>
+        </div>
+        <fieldset class="transportCheckbox">
+          <legend class="transportCheckbox__legend">
+            Транспорт
+          </legend>
+          <input class="transportCheckbox__input transportCheckbox__input--airplane" type="checkbox" name="airplane" checked>
+          <input class="transportCheckbox__input transportCheckbox__input--car" type="checkbox" name="car" checked>
+          <input class="transportCheckbox__input transportCheckbox__input--bicycle" type="checkbox" name="bicycle">
+          <input class="transportCheckbox__input transportCheckbox__input--hiking" type="checkbox" name="hiking" checked>
+        </fieldset>
+        <div class="form-selection__preference preference">
+          <p class="preference__title">
+            Левел
+          </p>
+          <input class="preference__input" type="text" value="30">
+          <input class="preference__input" type="text" value="100">
+        </div>
+        <button class="preference__button button">
+          Показать
+        </button>
+      </form>
+      <section class="catalog-hitchickers">
+        <ul class="cards">
+          <li class="card">
+            <p class="card__level">
+              <span>
+                99
+              </span>
+              level
+            </p>
+            <a href="#">
+              <img class="card__avatar" src="img/avatar_firsova.jpg" width="70" height="70" alt="Аватар Тани Фирсовой">
+            </a>
+            <a class="card__name" href="#">
+              Таня Фирсова
+            </a>
+            <div class="card__likes--active">
+              <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15.79" r="15" fill="#E2E5F2"/>
+                <g clip-path="url(#clip0)">
+                  <g opacity="0.5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 14.6647L15.6705 13.2554C15.837 12.9064 16.1258 12.4046 16.5345 11.9989C16.9365 11.5996 17.418 11.3278 18 11.3278C19.257 11.3278 20.25 12.3723 20.25 13.628C20.25 14.5819 19.8345 15.2555 18.849 16.2827C18.5963 16.5458 18.3083 16.8302 17.9895 17.1437C17.1585 17.9629 16.125 18.9823 15 20.3451C13.875 18.9823 12.8415 17.9629 12.0105 17.1437C11.6918 16.8302 11.403 16.545 11.151 16.2827C10.1655 15.2555 9.75 14.5819 9.75 13.628C9.75 12.3723 10.743 11.3278 12 11.3278C12.582 11.3278 13.0635 11.5996 13.4655 11.9989C13.8743 12.4046 14.163 12.9064 14.3295 13.2554L15 14.6647ZM15.294 21.1966C15.2579 21.2415 15.2129 21.2777 15.1621 21.3024C15.1113 21.3272 15.056 21.34 15 21.34C14.944 21.34 14.8887 21.3272 14.8379 21.3024C14.7871 21.2777 14.7421 21.2415 14.706 21.1966C13.5053 19.6983 12.4185 18.627 11.5238 17.7455C9.975 16.2181 9 15.2578 9 13.628C9 11.9225 10.3425 10.54 12 10.54C13.2 10.54 14.0393 11.3672 14.553 12.1218C14.748 12.4093 14.8965 12.6858 15 12.9033C15.1297 12.6312 15.2792 12.3699 15.447 12.1218C15.9608 11.3664 16.8 10.54 18 10.54C19.6575 10.54 21 11.9225 21 13.628C21 15.2578 20.025 16.2181 18.4763 17.7455C17.5815 18.6278 16.4948 19.6991 15.294 21.1958V21.1966Z" fill="#192144"/>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="12" height="12" fill="white" transform="translate(9 9.79004)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="card__likesAmount">
+                1,5 М
+              </span>
+            </div>
+            <ul class="card__countryList">
+              <p>
+                Хочет посетить:
+              </p>
+              <li class="card__country country">
+                <img class="country__flag" src="img/flag_SriLanka.png" width="35" height="24" alt="Флаг Шри-Ланки">
+                <span class="country__name">
+                  Шри-Ланка
+                </span>
+              </li>
+              <li class="card__country country">
+                <img class="country__flag" src="img/flag_Thailand.png" width="35" height="24" alt="Флаг Таиланда">
+                <span class="country__name">
+                  Таиланд
+                </span>
+              </li>
+              <li class="card__country country">
+                <img class="country__flag" src="img/flag_Seychelles.png" width="35" height="24" alt="Флаг Сейшел">
+                <span class="country__name">
+                  Сейшелы
+                </span>
+              </li>
+            </ul>
+            <p class="card__tags">
+              #ЗОЖ, #ПП, #Фитнес, #пляж, #авокадо, #смузи
+            </p>
+            <div class="card__transportIcons">
+            </div>
+            <button class="card__buttonCall button">
+              Позвать
+            </button>
+          </li>
+          <li class="card">
+            <p class="card__level">
+              <span>
+                80
+              </span>
+              level
+            </p>
+            <a href="#">
+              <img class="card__avatar" src="img/avatar_demin.jpg" width="70" height="70" alt="Аватар Пети Демина">
+            </a>
+            <a class="card__name" href="#">
+              Петя Демин
+            </a>
+            <div class="card__likes">
+              <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15.79" r="15" fill="#E2E5F2"/>
+                <g clip-path="url(#clip0)">
+                  <g opacity="0.5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 14.6647L15.6705 13.2554C15.837 12.9064 16.1258 12.4046 16.5345 11.9989C16.9365 11.5996 17.418 11.3278 18 11.3278C19.257 11.3278 20.25 12.3723 20.25 13.628C20.25 14.5819 19.8345 15.2555 18.849 16.2827C18.5963 16.5458 18.3083 16.8302 17.9895 17.1437C17.1585 17.9629 16.125 18.9823 15 20.3451C13.875 18.9823 12.8415 17.9629 12.0105 17.1437C11.6918 16.8302 11.403 16.545 11.151 16.2827C10.1655 15.2555 9.75 14.5819 9.75 13.628C9.75 12.3723 10.743 11.3278 12 11.3278C12.582 11.3278 13.0635 11.5996 13.4655 11.9989C13.8743 12.4046 14.163 12.9064 14.3295 13.2554L15 14.6647ZM15.294 21.1966C15.2579 21.2415 15.2129 21.2777 15.1621 21.3024C15.1113 21.3272 15.056 21.34 15 21.34C14.944 21.34 14.8887 21.3272 14.8379 21.3024C14.7871 21.2777 14.7421 21.2415 14.706 21.1966C13.5053 19.6983 12.4185 18.627 11.5238 17.7455C9.975 16.2181 9 15.2578 9 13.628C9 11.9225 10.3425 10.54 12 10.54C13.2 10.54 14.0393 11.3672 14.553 12.1218C14.748 12.4093 14.8965 12.6858 15 12.9033C15.1297 12.6312 15.2792 12.3699 15.447 12.1218C15.9608 11.3664 16.8 10.54 18 10.54C19.6575 10.54 21 11.9225 21 13.628C21 15.2578 20.025 16.2181 18.4763 17.7455C17.5815 18.6278 16.4948 19.6991 15.294 21.1958V21.1966Z" fill="#192144"/>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="12" height="12" fill="white" transform="translate(9 9.79004)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="card__likesAmount">
+                1500
+              </span>
+            </div>
+            <ul class="card__countryList">
+              <p>
+                Хочет посетить:
+              </p>
+              <li class="card__country country">
+                <img class="country__flag" src="img/flag_Belgium.png" width="35" height="24" alt="Флаг Бельгии">
+                <span class="country__name">
+                  Бельгия
+                </span>
+              </li>
+              <li class="card__country country">
+                <img class="country__flag" src="img/flag_Czech.png" width="35" height="24" alt="Флаг Чехии">
+                <span class="country__name">
+                  Чехия
+                </span>
+              </li>
+            </ul>
+            <p class="card__tags">
+              #бургер, #бар, #футбол, #концерт, #крафт
+            </p>
+            <div class="card__transportIcons">
+            </div>
+            <button class="card__buttonCall button">
+              Позвать
+            </button>
+          </li>
+          <li class="card">
+            <p class="card__level">
+              <span>
+                25
+              </span>
+              level
+            </p>
+            <a href="#">
+              <img class="card__avatar" src="img/avatar_smolov.jpg" width="70" height="70" alt="Аватар Марка Смолова">
+            </a>
+            <a class="card__name" href="#">
+              Марк Смолов
+            </a>
+            <div class="card__likes">
+              <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15.79" r="15" fill="#E2E5F2"/>
+                <g clip-path="url(#clip0)">
+                  <g opacity="0.5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 14.6647L15.6705 13.2554C15.837 12.9064 16.1258 12.4046 16.5345 11.9989C16.9365 11.5996 17.418 11.3278 18 11.3278C19.257 11.3278 20.25 12.3723 20.25 13.628C20.25 14.5819 19.8345 15.2555 18.849 16.2827C18.5963 16.5458 18.3083 16.8302 17.9895 17.1437C17.1585 17.9629 16.125 18.9823 15 20.3451C13.875 18.9823 12.8415 17.9629 12.0105 17.1437C11.6918 16.8302 11.403 16.545 11.151 16.2827C10.1655 15.2555 9.75 14.5819 9.75 13.628C9.75 12.3723 10.743 11.3278 12 11.3278C12.582 11.3278 13.0635 11.5996 13.4655 11.9989C13.8743 12.4046 14.163 12.9064 14.3295 13.2554L15 14.6647ZM15.294 21.1966C15.2579 21.2415 15.2129 21.2777 15.1621 21.3024C15.1113 21.3272 15.056 21.34 15 21.34C14.944 21.34 14.8887 21.3272 14.8379 21.3024C14.7871 21.2777 14.7421 21.2415 14.706 21.1966C13.5053 19.6983 12.4185 18.627 11.5238 17.7455C9.975 16.2181 9 15.2578 9 13.628C9 11.9225 10.3425 10.54 12 10.54C13.2 10.54 14.0393 11.3672 14.553 12.1218C14.748 12.4093 14.8965 12.6858 15 12.9033C15.1297 12.6312 15.2792 12.3699 15.447 12.1218C15.9608 11.3664 16.8 10.54 18 10.54C19.6575 10.54 21 11.9225 21 13.628C21 15.2578 20.025 16.2181 18.4763 17.7455C17.5815 18.6278 16.4948 19.6991 15.294 21.1958V21.1966Z" fill="#192144"/>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="12" height="12" fill="white" transform="translate(9 9.79004)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="card__likesAmount">
+                170
+              </span>
+            </div>
+            <ul class="card__countryList">
+              <p>
+                Хочет посетить:
+              </p>
+              <li class="card__country country">
+                <img class="country__flag" src="img/flag_USA.png" width="35" height="24" alt="Флаг США">
+                <span class="country__name">
+                  США
+                </span>
+              </li>
+              <li class="card__country country">
+                <img class="country__flag" src="img/flag_Australia.png" width="35" height="24" alt="Флаг Австралии">
+                <span class="country__name">
+                  Австралия
+                </span>
+              </li>
+              <li class="card__country country">
+                <img class="country__flag" src="img/flag_Dominica.png" width="35" height="24" alt="Флаг Доминики">
+                <span class="country__name">
+                  Доминика
+                </span>
+              </li>
+            </ul>
+            <p class="card__tags">
+              #бургер, #бар, #футбол, #концерт, #крафт
+            </p>
+            <div class="card__transportIcons">
+            </div>
+            <button class="card__buttonCall button">
+              Позвать
+            </button>
+          </li>
+          <li class="card">
+            <p class="card__level">
+              <span>
+                50
+              </span>
+              level
+            </p>
+            <a>
+              <img class="card__avatar" src="img/avatar_rogovaya.jpg" width="70" height="70" alt="Аватар Ларисы Роговой">
+            </a>
+            <a class="card__name">
+              Лариса Роговая
+            </a>
+            <div class="card__likes">
+              <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15.79" r="15" fill="#E2E5F2"/>
+                <g clip-path="url(#clip0)">
+                  <g opacity="0.5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 14.6647L15.6705 13.2554C15.837 12.9064 16.1258 12.4046 16.5345 11.9989C16.9365 11.5996 17.418 11.3278 18 11.3278C19.257 11.3278 20.25 12.3723 20.25 13.628C20.25 14.5819 19.8345 15.2555 18.849 16.2827C18.5963 16.5458 18.3083 16.8302 17.9895 17.1437C17.1585 17.9629 16.125 18.9823 15 20.3451C13.875 18.9823 12.8415 17.9629 12.0105 17.1437C11.6918 16.8302 11.403 16.545 11.151 16.2827C10.1655 15.2555 9.75 14.5819 9.75 13.628C9.75 12.3723 10.743 11.3278 12 11.3278C12.582 11.3278 13.0635 11.5996 13.4655 11.9989C13.8743 12.4046 14.163 12.9064 14.3295 13.2554L15 14.6647ZM15.294 21.1966C15.2579 21.2415 15.2129 21.2777 15.1621 21.3024C15.1113 21.3272 15.056 21.34 15 21.34C14.944 21.34 14.8887 21.3272 14.8379 21.3024C14.7871 21.2777 14.7421 21.2415 14.706 21.1966C13.5053 19.6983 12.4185 18.627 11.5238 17.7455C9.975 16.2181 9 15.2578 9 13.628C9 11.9225 10.3425 10.54 12 10.54C13.2 10.54 14.0393 11.3672 14.553 12.1218C14.748 12.4093 14.8965 12.6858 15 12.9033C15.1297 12.6312 15.2792 12.3699 15.447 12.1218C15.9608 11.3664 16.8 10.54 18 10.54C19.6575 10.54 21 11.9225 21 13.628C21 15.2578 20.025 16.2181 18.4763 17.7455C17.5815 18.6278 16.4948 19.6991 15.294 21.1958V21.1966Z" fill="#192144"/>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="12" height="12" fill="white" transform="translate(9 9.79004)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="card__likesAmount">
+                23
+              </span>
+            </div>
+            <ul class="card__countryList">
+              <p>
+                Хочет посетить:
+              </p>
+              <li class="card__country country">
+                <img class="country__flag" src="img/flag_United-Kingdom.png" width="35" height="24" alt="Флаг Великобритании">
+                <span class="country__name">
+                  Великобритания
+                </span>
+              </li>
+              <li class="card__country country">
+                <img class="country__flag" src="img/flag_Germany.png" width="35" height="24" alt="Флаг Германии">
+                <span class="country__name">
+                  Германия
+                </span>
+              </li>
+            </ul>
+            <p class="card__tags">
+              #бургер, #бар, #футбол, #концерт, #крафт
+            </p>
+            <div class="card__transportIcons">
+            </div>
+            <button class="card__buttonCall button">
+              Позвать
+            </button>
+          </li>
+        </ul>
+        <a class="hitchhikers__readMore" href="№">
+          Показать еще
+        </a>
+      </section>
+      <div class="pagination">
+        <button>
+          &#9658;
+        </button>
+        <ul class="paginator__pages">
+          <li class="paginator__page">
+            <a class="active" href="#">
+              1
+            </a>
+          </li>
+          <li class="paginator__page">
+            <a href="#">
+              2
+            </a>
+          </li>
+          <li class="paginator__page">
+            <a href="#">
+              3
+            </a>
+          </li>
+          <li class="paginator__page">
+            <a href="#">
+              4
+            </a>
+          </li>
+        </ul>
+        <button>
+          &#9658;
+        </button>
+      </div>
+    </main>
+    <footer class="page-footer page-footer__center">
+      <a class="logo">
+        <img class="logo__img" src="img/logo_mobile.svg" width="96" height="15" alt="Логотип &quot;Погнали&quot;">
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+              <span class="visually-hidden">
+                Facebook
+              </span>
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="22.5" cy="22.6239" rx="22.5" ry="22.1352" fill="#FFD74B"/>
+              <path d="M24.4879 32.7695H19.1293V23.2513H17V18.5439H19.0664C18.9093 16.4116 19.3021 14.8547 20.2607 13.7922C20.7178 13.3207 21.2746 12.9439 21.8956 12.686C22.5166 12.4281 23.1881 12.2947 23.8671 12.2944H27.6229V16.8321H24.6686C24.4945 17.3871 24.428 17.9669 24.4721 18.5439H27.615V23.2513H24.4721L24.4879 32.7695ZM20.3157 31.6627H23.2857V22.1446H26.4286V19.6728H23.2857V19.1121C23.2857 17.6364 23.2857 16.3157 24.0714 15.8213L24.2207 15.7254H26.4286V13.4012H23.8986C23.3844 13.395 22.8746 13.4903 22.4023 13.6809C21.9299 13.8716 21.5054 14.1533 21.1564 14.508C20.3707 15.4155 20.0486 16.9354 20.2921 19.0383L20.3707 19.6507H18.1786V22.1446H20.3157V31.6627Z" fill="#192144"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+              <span class="visually-hidden">
+                Вконтакте
+              </span>
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="22.5" cy="22.6239" rx="22.5" ry="22.1352" fill="#FFD74B"/>
+              <path d="M28.7664 28.8542C28.219 28.8419 27.6854 28.6812 27.2232 28.3893C26.7407 28.065 26.2975 27.6862 25.9026 27.2604C25.5761 26.9358 25.0345 26.3898 24.8268 26.3898C24.619 26.3898 24.4706 27.0686 24.478 27.5482C24.4812 27.8792 24.3564 28.1989 24.1293 28.441C23.8712 28.6507 23.5561 28.7791 23.2242 28.8099H21.7997C19.7522 28.7651 17.7918 27.9779 16.2871 26.5964C13.5568 24.1099 11.2122 19.3582 11.1158 19.1516C11.0238 18.979 10.9853 18.7832 11.0051 18.5888C11.0249 18.3945 11.1021 18.2103 11.2271 18.0596C11.5099 17.8251 11.868 17.6994 12.2361 17.7054H15.2632H15.3522C15.6027 17.7418 15.8428 17.8297 16.0571 17.9637C16.2587 18.0981 16.4202 18.2842 16.5245 18.5023C16.8444 19.1834 17.2113 19.8416 17.6226 20.4723C18.5945 21.948 19.0248 22.2874 19.1806 22.3612C19.354 21.6693 19.4017 20.9522 19.3216 20.2436C19.3476 19.9209 19.2941 19.5967 19.1658 19.2992C19.0029 19.1696 18.8029 19.0947 18.5945 19.0852L18.0529 18.5761C17.949 18.0891 18.4906 17.6685 18.869 17.5062C19.6241 17.2709 20.4164 17.1759 21.2061 17.2258H21.7329C22.2686 17.212 22.8041 17.2615 23.328 17.3734C24.5893 17.639 24.5448 18.6499 24.4929 19.8156C24.4929 20.155 24.4558 20.5535 24.4558 21.0109C24.4558 21.1216 24.4558 21.2397 24.4558 21.3651C24.4266 21.6863 24.4492 22.0101 24.5226 22.3243C25.1402 21.8104 25.6604 21.1907 26.0584 20.4945C26.4879 19.8361 26.865 19.1454 27.1861 18.4285V18.4285C27.2839 18.2018 27.4516 18.0118 27.6649 17.8858C27.8782 17.7599 28.1262 17.7044 28.3732 17.7276H31.5487C31.6425 17.7187 31.7369 17.7187 31.8306 17.7276C32.5726 17.7276 33.0103 17.9415 33.1884 18.3547C33.3664 18.7679 33.3145 19.5795 31.4374 21.7562L30.6955 22.5899C30.336 22.937 30.0264 23.3318 29.7755 23.7631C30.0565 24.0808 30.3754 24.3632 30.7251 24.6042C31.5778 25.2432 32.3283 26.0069 32.951 26.8694C33.097 27.0371 33.1925 27.2423 33.2266 27.4616C33.2608 27.6808 33.2321 27.9052 33.1439 28.109C32.9884 28.3346 32.7803 28.5196 32.5375 28.6481C32.2946 28.7765 32.0241 28.8447 31.749 28.8468L28.9371 28.8837L28.7664 28.8542ZM24.8268 25.283C25.4945 25.283 26.0732 25.8659 26.689 26.4783C27.0217 26.8396 27.3951 27.1614 27.8019 27.4375C28.1096 27.641 28.4711 27.7489 28.8406 27.7474H28.9148L31.7342 27.7105C31.8732 27.7026 32.0094 27.6675 32.1348 27.6072L32.0606 27.4892C31.499 26.728 30.8292 26.052 30.0722 25.4822C29.1893 24.7444 28.7368 24.3976 28.6848 23.8295C28.6329 23.2614 29.0484 22.767 29.8793 21.8299L30.6213 21.0109C31.2477 20.3756 31.7618 19.6397 32.1422 18.8343C31.9767 18.8246 31.8107 18.8246 31.6451 18.8343H28.4029C28.3443 18.8213 28.2835 18.8213 28.2248 18.8343C27.8814 19.6175 27.4719 20.3703 27.0006 21.0847C25.5984 23.1654 24.938 23.4458 24.4706 23.4458C24.3257 23.4458 24.183 23.4103 24.0551 23.3425C23.3132 22.9219 23.3132 21.9849 23.3577 21.3061C23.3577 21.1954 23.3577 21.0847 23.3577 20.9888C23.3577 20.5092 23.3577 20.096 23.3948 19.7419C23.4542 18.5023 23.3948 18.4949 23.1129 18.4285C22.6586 18.3392 22.1958 18.2997 21.7329 18.3105H21.221C20.7499 18.3008 20.2787 18.3254 19.8113 18.3842C19.8821 18.4361 19.9446 18.4983 19.9968 18.5687C20.3028 19.0485 20.4554 19.6093 20.4345 20.1772C20.531 21.3946 20.479 22.981 19.6926 23.3646C19.5533 23.4295 19.4011 23.4622 19.2474 23.4606C18.5574 23.4606 17.8748 22.8113 16.71 21.0552C16.263 20.3828 15.8638 19.6802 15.5155 18.9524L15.4561 18.8786C15.3812 18.8406 15.3013 18.8133 15.2187 18.7974H12.251H12.199C12.6368 19.6976 14.7142 23.6819 17.0364 25.77C18.3404 26.9614 20.0299 27.6497 21.7997 27.7105H23.1722C23.2422 27.6957 23.3097 27.6708 23.3726 27.6367C23.3726 27.6367 23.3726 27.6367 23.3726 27.5703C23.3726 27.3711 23.3726 25.652 24.5448 25.3568C24.6356 25.3213 24.7302 25.2965 24.8268 25.283V25.283Z" fill="#192144"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+              <span class="visually-hidden">
+                Instagram
+              </span>
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="22.5" cy="22.6239" rx="22.5" ry="22.1352" fill="#FFD74B"/>
+              <g clip-path="url(#clip0)">
+                <path d="M26.9601 16.0332C27.8189 16.0351 28.6419 16.3715 29.2491 16.9688C29.8563 17.5662 30.1982 18.3759 30.2001 19.2207V27.0122C30.1982 27.857 29.8563 28.6667 29.2491 29.2641C28.6419 29.8614 27.8189 30.1978 26.9601 30.1997H19.0401C18.1827 30.196 17.3615 29.8587 16.7559 29.2616C16.1502 28.6644 15.8092 27.8558 15.8073 27.0122V19.2207C15.8092 18.3771 16.1502 17.5685 16.7559 16.9713C17.3615 16.3742 18.1827 16.0369 19.0401 16.0332H26.9601ZM26.9601 14.9707H19.0401C17.8944 14.9707 16.7956 15.4185 15.9854 16.2155C15.1753 17.0125 14.7201 18.0935 14.7201 19.2207V27.0122C14.7201 28.1394 15.1753 29.2204 15.9854 30.0174C16.7956 30.8144 17.8944 31.2622 19.0401 31.2622H26.9601C28.1059 31.2622 29.2047 30.8144 30.0148 30.0174C30.825 29.2204 31.2801 28.1394 31.2801 27.0122V19.2207C31.2801 18.0935 30.825 17.0125 30.0148 16.2155C29.2047 15.4185 28.1059 14.9707 26.9601 14.9707V14.9707Z" fill="#192144"/>
+                <path d="M23.007 19.9849C23.6378 19.9849 24.2545 20.1689 24.779 20.5137C25.3036 20.8585 25.7124 21.3486 25.9538 21.9219C26.1952 22.4953 26.2584 23.1262 26.1353 23.7349C26.0122 24.3436 25.7085 24.9027 25.2624 25.3416C24.8163 25.7804 24.248 26.0793 23.6293 26.2003C23.0105 26.3214 22.3692 26.2593 21.7864 26.0218C21.2036 25.7843 20.7054 25.3821 20.3549 24.8661C20.0045 24.35 19.8174 23.7434 19.8174 23.1227C19.8164 22.7104 19.8983 22.3019 20.0583 21.9208C20.2182 21.5397 20.4531 21.1934 20.7495 20.9018C21.0459 20.6103 21.3979 20.3792 21.7853 20.2218C22.1727 20.0645 22.5879 19.9839 23.007 19.9849V19.9849ZM23.007 18.9224C22.1622 18.921 21.3361 19.1661 20.633 19.6268C19.9299 20.0875 19.3815 20.743 19.0573 21.5104C18.733 22.2778 18.6474 23.1226 18.8114 23.9378C18.9753 24.7531 19.3814 25.5022 19.9782 26.0903C20.575 26.6785 21.3358 27.0792 22.1642 27.2419C22.9926 27.4045 23.8515 27.3218 24.632 27.0041C25.4126 26.6863 26.0799 26.148 26.5493 25.4571C27.0188 24.7662 27.2694 23.9538 27.2694 23.1227C27.2703 22.5715 27.1608 22.0254 26.947 21.5159C26.7332 21.0063 26.4194 20.5432 26.0235 20.1531C25.6276 19.7629 25.1574 19.4534 24.6398 19.2422C24.1222 19.0311 23.5674 18.9224 23.007 18.9224Z" fill="#192144"/>
+                <path d="M27.4282 19.7308C27.9611 19.7308 28.393 19.3059 28.393 18.7817C28.393 18.2575 27.9611 17.8325 27.4282 17.8325C26.8954 17.8325 26.4634 18.2575 26.4634 18.7817C26.4634 19.3059 26.8954 19.7308 27.4282 19.7308Z" fill="#192144"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="18" height="17.7081" fill="white" transform="translate(14 14.2617)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/icon_academy.svg" alt="Логотип HTML Academy">
+        </a>
+      </p>
+    </footer>
   </body>
 </html>
