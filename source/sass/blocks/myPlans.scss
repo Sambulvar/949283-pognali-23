@@ -1,5 +1,6 @@
 .myPlans {
   background-color: $blue-special-light;
+
   @include borders-top-radius(25px);
 }
 

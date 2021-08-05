@@ -14,18 +14,8 @@
   margin: 10px 0;
 }
 
-.route__flag {
-  border: 1px solid $blue-cadet;
-  border-radius: 4px;
-  padding: 11px;
-}
-
-.route__chooseCountry {
-  border: 1px solid $blue-cadet;
-  border-radius: 4px;
-  padding: 11px;
-}
-
+.route__flag,
+.route__chooseCountry,
 .route__addCountry {
   border: 1px solid $blue-cadet;
   border-radius: 4px;

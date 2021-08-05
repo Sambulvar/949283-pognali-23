@@ -1,5 +1,6 @@
 .account {
   background-color: $grey-crayola;
+
   @include borders-bottom-radius(25px);
 }
 

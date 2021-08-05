@@ -11,12 +11,15 @@
   height: 34px;
   border-radius: 50%;
   text-align: center;
+
   &--first {
     background-color: $yellow-special-orange;
   }
+
   &--second {
     background-color: $yellow-special-dark;
   }
+
   &--third {
     background-color: $yellow-basic;
   }

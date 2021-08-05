@@ -1,11 +1,11 @@
 .registration {
   background-color: $blue-ultramarine;
+
   @include borders-bottom-radius(25px);
 }
 
 .registration__title {
   text-align: center;
-
 }
 
 .registration__text {
