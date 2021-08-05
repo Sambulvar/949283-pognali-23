@@ -1,0 +1,24 @@
+.countries__sketch {
+  padding: 25px;
+  background-color: $white-basic;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.countries__name {
+  margin: 0;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.countries__cue {
+  color: $grey-special;
+  opacity: 0.3;
+
+}
+
+.countries__views {
+  color: $blue-basic;
+  opacity: 0.3;
+}

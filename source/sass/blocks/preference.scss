@@ -1,0 +1,21 @@
+.preference {
+  border: none;
+}
+
+.preference__legend {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--form {
+    color: $blue-basic-light;
+  }
+}
+
+.preference__label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: $black-basic;
+}

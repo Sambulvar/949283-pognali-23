@@ -1,0 +1,37 @@
+.registration {
+  background-color: $blue-ultramarine;
+  @include borders-bottom-radius(25px);
+}
+
+.registration__title {
+  text-align: center;
+
+}
+
+.registration__text {
+  color: $white_basic;
+  text-align: center;
+}
+
+.registration__link {
+  color: $yellow-basic;
+}
+
+.registration__form {
+  text-align: center;
+}
+
+.registration__input {
+  height: 62px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  border: none;
+}
+
+.registration__button {
+  border: 0;
+  font-family: inherit;
+}

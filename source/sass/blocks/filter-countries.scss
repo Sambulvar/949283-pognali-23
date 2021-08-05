@@ -1,0 +1,12 @@
+.page-main .filter-countries__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $blue-ultramarine;
+  background-color: $grey-solitude;
+  height: 75px;
+
+
+  @include borders-bottom-radius(25px);
+}

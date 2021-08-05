@@ -1,0 +1,25 @@
+.calendar {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.calendar__month {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: $blue-basic-light;
+}
+
+.calendar__week {
+  list-style: none;
+  color: $grey-special;
+}
+
+.calendar__weekday--weekend {
+  color: $orange-red;
+}
+
+.calendar__dates {
+  list-style: none;
+  color: $blue-basic-light;
+}

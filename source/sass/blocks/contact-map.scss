@@ -1,0 +1,12 @@
+.contact-map__wrap {
+  background-color: $yellow-basic;
+  @include borders-bottom-radius(25px);
+}
+
+.contact-map__link {
+  border: 3px solid $blue-ultramarine;
+}
+
+.contact-map__address {
+  color: $blue-basic-light;
+}

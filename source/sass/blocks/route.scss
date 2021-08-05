@@ -1,0 +1,33 @@
+.route {
+  color: $blue-basic-light;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.route__country {
+  display: inline-block;
+  border: 1px solid $blue-cadet;
+  border-radius: 4px;
+  padding: 11px;
+  margin: 10px 0;
+}
+
+.route__flag {
+  border: 1px solid $blue-cadet;
+  border-radius: 4px;
+  padding: 11px;
+}
+
+.route__chooseCountry {
+  border: 1px solid $blue-cadet;
+  border-radius: 4px;
+  padding: 11px;
+}
+
+.route__addCountry {
+  border: 1px solid $blue-cadet;
+  border-radius: 4px;
+  padding: 11px;
+}

@@ -1,0 +1,14 @@
+.addPlan {
+  background-color: $blue-bruguer;
+  margin-top: -45px;
+
+  @include borders-top-radius(25px);
+}
+
+.addPlan__title {
+  color: $blue-basic-light;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 25px 25px 0;
+}

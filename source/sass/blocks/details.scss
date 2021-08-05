@@ -1,0 +1,22 @@
+.details {
+  color: $blue-basic-light;
+}
+
+.details__text {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.details__measure {
+  opacity: 0.3;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.details__children {
+  font-size: 15px;
+  line-height: 15px;
+}

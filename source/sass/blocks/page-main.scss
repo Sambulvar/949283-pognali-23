@@ -1,0 +1,22 @@
+.page-main__chief-caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $white-basic;
+  margin: 0;
+  background-color: $blue-purple;
+  padding-bottom: 12px;
+
+  @include borders-bottom-radius(25px);
+}
+
+.page-main__wrapper--yellow {
+  background-color: $yellow-basic;
+  padding-bottom: 4px;
+}
+
+.page-main--catalog {
+  background-color: $grey-whisper;
+}
+

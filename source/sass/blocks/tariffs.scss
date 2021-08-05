@@ -1,0 +1,23 @@
+.tariffs {
+  list-style: none;
+  padding: 0;
+  color: $grey-special;
+}
+
+.tariffs__number {
+  color: $white-basic;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  text-align: center;
+  &--first {
+    background-color: $yellow-special-orange;
+  }
+  &--second {
+    background-color: $yellow-special-dark;
+  }
+  &--third {
+    background-color: $yellow-basic;
+  }
+}

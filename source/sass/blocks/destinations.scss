@@ -1,0 +1,12 @@
+.destinations {
+  background-color: $grey-basic-light;
+  @include borders-bottom-radius(25px);
+}
+
+.destinations__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $grey-special;
+}
+

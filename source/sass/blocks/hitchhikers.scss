@@ -1,0 +1,19 @@
+.hitchhikers {
+  background: url("../../img/background-hitchhikers.png") no-repeat, $blue-ultramarine;
+  @include borders-bottom-radius(25px);
+}
+
+.hitchhikers__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white-basic;
+
+  &--accent {
+    font-weight: 700;
+  }
+}
+
+.hitchhikers__cards {
+  list-style: none;
+}

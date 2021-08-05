@@ -1,0 +1,16 @@
+.aboutThe {
+  background: url("../../img/aboutThe-background-mobile.png") no-repeat center $blue-basic;
+  color: $white-basic;
+  padding: 33px 60px 82px;
+
+  @include borders-bottom-radius(25px);
+}
+
+.aboutThe__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  &--accent {
+    font-weight: 700;
+  }
+}

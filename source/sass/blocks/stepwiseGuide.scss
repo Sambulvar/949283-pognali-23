@@ -1,0 +1,35 @@
+.stepwiseGuide {
+  color: $blue-basic;
+  list-style: none;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 30px 25px 40px;
+  margin-bottom: 0;
+}
+
+.stepwiseGuide__number {
+  color: $white-basic;
+}
+
+.stepwiseGuide__item {
+  @include borders-top-radius;
+  padding: 22px 24px;
+}
+
+.stepwiseGuide__item:nth-child(1) {
+  background-color: $yellow-special-orange;
+}
+
+.stepwiseGuide__item:nth-child(2) {
+  background-color: $yellow-brill;
+}
+
+.stepwiseGuide__item:nth-child(3) {
+  background-color: $yellow-special-dark;
+}
+
+.stepwiseGuide__item:nth-child(4) {
+  background-color: $yellow-basic;
+  @include borders-bottom-radius;
+}

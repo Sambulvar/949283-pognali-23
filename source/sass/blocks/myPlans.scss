@@ -1,0 +1,56 @@
+.myPlans {
+  background-color: $blue-special-light;
+  @include borders-top-radius(25px);
+}
+
+.myPlans__title {
+  color: $blue-basic-light;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 25px 25px 0;
+}
+
+.myPlans__list {
+  list-style: none;
+  padding: 0 0 20px 0;
+}
+
+.myPlans__item {
+  background-color: $white-basic;
+  margin: 25px;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.myPlans__num {
+  color: $blue-basic-light;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.myPlans__country {
+  color: $blue-basic-light;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.myPlans__amountHitchhickers {
+  color: $blue-basic-light;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.myPlans__change {
+  color: $black-basic;
+  opacity: 0.3;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+}

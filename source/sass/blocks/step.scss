@@ -1,0 +1,36 @@
+.step {
+  background-color: $white-basic;
+  margin: 25px;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.step__title {
+  color: $blue-basic-light;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.step__clarification {
+  color: $grey-special;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.step__control {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $blue-basic-light;
+  background-color: $yellow-basic;
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+
+  &--prev {
+    background-color: transparent;
+  }
+}

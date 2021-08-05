@@ -1,0 +1,124 @@
+.card {
+  background-color: $white-basic;
+  width: 270px;
+  text-align: center;
+
+  @include borders-top-radius;
+  @include borders-bottom-radius;
+
+  &--backgroundTransparent {
+    background: transparent;
+  }
+}
+
+.card__avatar {
+  @include borders-top-radius;
+
+  &--circle {
+    border-radius: 50%;
+  }
+}
+
+.card__changeAvatar {
+  font-family: inherit;
+  color: $blue-basic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: $blue-special-light;
+  border: none;
+  border-radius: 20px;
+  padding: 13px;
+}
+
+.card__likesAmount {
+  color: $blue-basic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card__wantText {
+  text-transform: lowercase;
+  color: $grey-special;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.card__flagList {
+  list-style: none;
+}
+
+.card__name {
+  color: $blue-basic-light;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.card__tags {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey-special;
+
+  &--small {
+    font-size: 15px;
+  }
+
+  &--fieldset {
+    border-radius: 10px;
+    border-color: $blue-cadet;
+    outline: none;
+  }
+}
+
+.card__legend {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $blue-basic-light;
+  text-align: center;
+}
+
+.card__textarea {
+  overflow: hidden;
+  border: none;
+  background-color: inherit;
+  resize: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey-special;
+}
+
+.card__preference {
+  position: relative;
+}
+
+.card__preference::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -2px;
+  color: $red-basic;
+  background-image: url("../../img/border_transport_mobile.svg");
+  width: 270px;
+  height: 63px;
+}
+
+.card__buttonCall {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $blue-basic;
+  background-color: $yellow-basic;
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+}
