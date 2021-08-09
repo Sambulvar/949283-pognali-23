@@ -1,6 +1,5 @@
 .connectList {
-  list-style: none;
-}
+  @include reset-list;}
 
 .connectList__tel,
 .connectList__mail {

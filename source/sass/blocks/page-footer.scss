@@ -3,7 +3,7 @@
 }
 
 .page-footer__social {
-  list-style: none;
+  @include reset-list;
 }
 
 .page-footer__copyright {

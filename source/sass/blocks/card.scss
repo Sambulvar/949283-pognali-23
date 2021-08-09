@@ -1,7 +1,8 @@
 .card {
+  position: relative;
   background-color: $white-basic;
-  width: 270px;
   text-align: center;
+  margin: 10px 0 10px;
 
   @include borders-top-radius;
   @include borders-bottom-radius;
@@ -47,15 +48,34 @@
 }
 
 .card__flagList {
-  list-style: none;
+  @include reset-list;
 }
 
 .card__name {
+  position: relative;
   color: $blue-basic-light;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
+
+  &--online::before {
+    background-color: $green-yellow;
+  }
+
+  &--offline::before {
+    background-color: $red-pink;
+  }
+}
+
+.card__name::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: -15px;
 }
 
 .card__tags {

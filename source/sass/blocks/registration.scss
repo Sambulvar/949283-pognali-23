@@ -1,5 +1,9 @@
 .registration {
   background-color: $blue-ultramarine;
+  padding: 102px 25px 25px;
+  position: relative;
+  z-index: 7;
+  margin-bottom: -30px;
 
   @include borders-bottom-radius(25px);
 }
@@ -19,19 +23,33 @@
 
 .registration__form {
   text-align: center;
+  padding: 0;
 }
 
 .registration__input {
-  height: 62px;
-  border-radius: 10px;
+  height: $email-height;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   border: none;
+  padding: 0;
+
+  @include borders-left-radius;
+}
+
+.registration__wrapper {
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  left: -5px;
+  background-color: $white-basic;
+  height: $email-height;
+
+  @include borders-right-radius;
 }
 
 .registration__button {
-  border: 0;
-  font-family: inherit;
+  padding: 0;
 }
+

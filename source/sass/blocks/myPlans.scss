@@ -13,8 +13,7 @@
 }
 
 .myPlans__list {
-  list-style: none;
-  padding: 0 0 20px 0;
+  @include reset-list;
 }
 
 .myPlans__item {

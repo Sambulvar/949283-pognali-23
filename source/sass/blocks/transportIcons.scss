@@ -1,0 +1,11 @@
+.transportIcons {
+  @include reset-list;
+}
+
+.transportIcons__item {
+  fill-opacity: 0.15;
+
+  &--active {
+    fill-opacity: 1;
+  }
+}

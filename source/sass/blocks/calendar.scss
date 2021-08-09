@@ -11,8 +11,9 @@
 }
 
 .calendar__week {
-  list-style: none;
   color: $grey-special;
+
+  @include reset-list;
 }
 
 .calendar__weekday--weekend {
@@ -20,6 +21,7 @@
 }
 
 .calendar__dates {
-  list-style: none;
   color: $blue-basic-light;
+
+  @include reset-list;
 }

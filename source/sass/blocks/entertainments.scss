@@ -1,11 +1,11 @@
 .entertainments {
-  list-style: none;
-  padding: 0;
   color: $blue-basic-light;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @include reset-list;
 }
 
 .entertainments__text {

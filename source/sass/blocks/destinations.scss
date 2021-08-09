@@ -1,12 +1,27 @@
 .destinations {
   background-color: $grey-basic-light;
+  padding: 72px 25px 54px;
+  margin-bottom: -30px;
+  position: relative;
+  z-index: 10;
 
   @include borders-bottom-radius(25px);
 }
 
+.destinations__title {
+  padding: 0 25px;
+}
+
 .destinations__text {
+  display: inline-block;
+  padding: 19px 25px 60px;
+  margin: 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: $grey-special;
+}
+
+.destinations__button {
+  margin-top: 25px;
 }

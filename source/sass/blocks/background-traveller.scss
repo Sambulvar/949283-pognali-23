@@ -1,0 +1,8 @@
+.background-traveller {
+  background-color: $blue-basic;
+  height: 569px;
+  background-image: url("../../img/background_traveller_mobile.png"), url("../../img/background_globe_mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 254px, 50% 0;
+  margin-bottom: -569px;
+}

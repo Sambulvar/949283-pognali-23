@@ -1,11 +1,11 @@
 .stepwiseGuide {
   color: $blue-basic;
-  list-style: none;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  padding: 30px 25px 40px;
-  margin-bottom: 0;
+  background: linear-gradient($blue-basic 25%, $blue-ultramarine 25%);
+
+  @include reset-list;
 }
 
 .stepwiseGuide__number {
@@ -14,19 +14,27 @@
 
 .stepwiseGuide__item {
   @include borders-top-radius;
-  padding: 22px 24px;
+  padding: 22px 22px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .stepwiseGuide__item:nth-child(1) {
   background-color: $yellow-special-orange;
+  padding-bottom: 42px;
+  margin-bottom: -20px;
 }
 
 .stepwiseGuide__item:nth-child(2) {
   background-color: $yellow-brill;
+  padding-bottom: 42px;
+  margin-bottom: -20px;
 }
 
 .stepwiseGuide__item:nth-child(3) {
   background-color: $yellow-special-dark;
+  padding-bottom: 42px;
+  margin-bottom: -20px;
 }
 
 .stepwiseGuide__item:nth-child(4) {

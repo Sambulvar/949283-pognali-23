@@ -1,5 +1,5 @@
 .catalog-hitchhikers__cards {
-  list-style: none;
+  @include reset-list;
 }
 
 .catalog-hitchhikers__readMore {

@@ -5,8 +5,13 @@
   padding: 22px;
   border-radius: 10px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: $font-size-button;
   line-height: 18px;
   display: inline-block;
-  margin-bottom: 35px;
+  margin: 0;
+  border: none;
+}
+
+.button__text {
+  font-family: inherit;
 }

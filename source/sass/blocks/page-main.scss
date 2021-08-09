@@ -8,12 +8,20 @@
   background-color: $blue-purple;
   padding-bottom: 12px;
 
+  &--index {
+    background-color: transparent;
+  }
+
   @include borders-bottom-radius(25px);
 }
 
 .page-main__wrapper {
   background-color: $yellow-basic;
   padding-bottom: 4px;
+}
+
+.page-main__wrapper--aboutThe {
+  background-color: $grey-basic-light;
 }
 
 .page-main--catalog {
