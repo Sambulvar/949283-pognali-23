@@ -1,6 +1,6 @@
 .step {
   background-color: $white-basic;
-  margin: 25px;
+  margin: 25px 0;
   border-radius: 10px;
   padding: 25px;
 }
@@ -16,6 +16,10 @@
   color: $grey-special;
   font-size: 16px;
   line-height: 22px;
+}
+
+.step__third {
+  padding-bottom: 50px;
 }
 
 .step__control {

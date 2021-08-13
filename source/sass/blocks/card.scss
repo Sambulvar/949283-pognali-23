@@ -10,6 +10,10 @@
   &--backgroundTransparent {
     background: transparent;
   }
+
+  &--catalog {
+    padding: 25px;
+  }
 }
 
 .card__avatar {
@@ -91,7 +95,6 @@
   &--fieldset {
     border-radius: 10px;
     border-color: $blue-cadet;
-    outline: none;
   }
 }
 
@@ -113,21 +116,15 @@
   font-size: 16px;
   line-height: 18px;
   color: $grey-special;
+  width: 100%;
+  outline: none;
+  font-family: inherit;
 }
 
-.card__preference {
-  position: relative;
-}
-
-.card__preference::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -2px;
-  color: $red-basic;
-  background-image: url("../../img/border_transport_mobile.svg");
-  width: 270px;
-  height: 63px;
+.card__textarea::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
 }
 
 .card__buttonCall {

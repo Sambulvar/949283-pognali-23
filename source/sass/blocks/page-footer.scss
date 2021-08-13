@@ -1,4 +1,9 @@
 .page-footer {
+  background-color: $white-basic;
+  position: relative;
+  z-index: 7;
+  margin-top: -30px;
+
   @include borders-top-radius(25px);
 }
 

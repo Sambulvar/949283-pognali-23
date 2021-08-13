@@ -7,17 +7,98 @@
 }
 
 .route__country {
-  display: inline-block;
-  border: 1px solid $blue-cadet;
-  border-radius: 4px;
-  padding: 11px;
-  margin: 10px 0;
+  position: relative;
+  left: 10px;
+  overflow: hidden;
 }
 
+.route__point,
+.route__addCountry,
+.route__chooseCountry {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.route__wrapper,
 .route__flag,
-.route__chooseCountry,
-.route__addCountry {
+.route__addCountry,
+.route__chooseCountry {
   border: 1px solid $blue-cadet;
   border-radius: 4px;
-  padding: 11px;
+}
+
+.route__wrapper {
+  display: inline-block;
+}
+
+.route__button {
+  height: $route-item-height;
+  width: 44px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+
+  &--gradient {
+    background: linear-gradient(to right, transparent, $white-basic 10%);
+  }
+
+  &--plus::before {
+    content: "";
+    width: 14px;
+    height: 2px;
+    background-color: $blue-pale;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+  }
+
+  &--plus::after {
+    content: "";
+    width: 2px;
+    height: 14px;
+    background-color: $blue-pale;
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 21px;
+  }
+}
+
+.route__flag {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  height: $route-item-height;
+  width: 53px;
+  text-align: center;
+  position: relative;
+}
+
+.route__flag::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $blue-basic-light;
+  position: absolute;
+  top: $route-item-height / 2 - 4px;
+  left: -5px;
+}
+
+.route__img {
+  position: relative;
+  top: $route-item-height / 2 - 12px;
+}
+
+.route__chooseCountry,
+.route__addCountry {
+  padding: 0 0 0 10px;
+}
+
+.route__addCountry {
+  background-color: $grey-basic-light;
+  margin-bottom: 10px;
 }

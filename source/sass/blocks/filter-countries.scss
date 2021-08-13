@@ -1,11 +1,39 @@
-.page-main .filter-countries__button {
+.filter-countries__wrapper {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $blue-ultramarine;
   background-color: $grey-solitude;
-  height: 75px;
+  margin: 0;
+  padding: 50px 25px 15px;
 
   @include borders-bottom-radius(25px);
+}
+
+.filter-countries__button {
+  position: relative;
+  padding: 5px 25px;
+  margin: 0;
+  display: block;
+}
+
+.filter-countries__button::before {
+  content: "";
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  background-image: url("../../img/icon_filter.svg");
+}
+
+.filter-countries__button::after {
+  content: "";
+  width: 17px;
+  height: 3px;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  background-image: url("../../img/icon_filter_expand.svg");
 }
