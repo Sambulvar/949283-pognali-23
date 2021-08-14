@@ -1,0 +1,84 @@
+.level {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+
+  &--rating99::before {
+    background-image: url("../../img/level99_ring_mobile.svg");
+    width: 60px;
+    height: 60px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &--rating80::before {
+    background-image: url("../../img/level80_ring_mobile.svg");
+    width: 60px;
+    height: 60px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &--white {
+    color: $white-basic;
+    background-color: $black-basic-opacity;
+    position: absolute;
+    top: 10px;
+    left: 17px;
+  }
+
+  &--blue {
+    color: $blue-basic-light;
+  }
+
+  &--big {
+    width: 100px;
+    height: 100px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: $grey-special;
+  }
+
+  &--big::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url("../../img/level80_ring_big.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.level__number {
+  display: inline-block;
+  padding-top: 12px;
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+
+  &--blue {
+    color: $blue-basic;
+  }
+
+  &--profile {
+    color: $blue-basic;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+  }
+}

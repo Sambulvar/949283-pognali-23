@@ -1,0 +1,17 @@
+.page-footer {
+  background-color: $white-basic;
+  position: relative;
+  z-index: 7;
+  margin-top: -30px;
+
+  @include borders-top-radius(25px);
+}
+
+.page-footer__social {
+  @include reset-list;
+}
+
+.page-footer__copyright {
+  font-size: 16px;
+  line-height: 16px;
+}

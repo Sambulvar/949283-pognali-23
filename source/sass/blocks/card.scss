@@ -1,0 +1,141 @@
+.card {
+  position: relative;
+  background-color: $white-basic;
+  text-align: center;
+  margin: 10px 0 10px;
+
+  @include borders-top-radius;
+  @include borders-bottom-radius;
+
+  &--backgroundTransparent {
+    background: transparent;
+  }
+
+  &--catalog {
+    padding: 25px;
+  }
+}
+
+.card__avatar {
+  @include borders-top-radius;
+
+  &--circle {
+    border-radius: 50%;
+  }
+}
+
+.card__changeAvatar {
+  font-family: inherit;
+  color: $blue-basic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: $blue-special-light;
+  border: none;
+  border-radius: 20px;
+  padding: 13px;
+}
+
+.card__likesAmount {
+  color: $blue-basic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card__wantText {
+  text-transform: lowercase;
+  color: $grey-special;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.card__flagList {
+  @include reset-list;
+}
+
+.card__name {
+  position: relative;
+  color: $blue-basic-light;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+
+  &--online::before {
+    background-color: $green-yellow;
+  }
+
+  &--offline::before {
+    background-color: $red-pink;
+  }
+}
+
+.card__name::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: -15px;
+}
+
+.card__tags {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey-special;
+
+  &--small {
+    font-size: 15px;
+  }
+
+  &--fieldset {
+    border-radius: 10px;
+    border-color: $blue-cadet;
+  }
+}
+
+.card__legend {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $blue-basic-light;
+  text-align: center;
+}
+
+.card__textarea {
+  overflow: hidden;
+  border: none;
+  background-color: inherit;
+  resize: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey-special;
+  width: 100%;
+  outline: none;
+  font-family: inherit;
+}
+
+.card__textarea::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.card__buttonCall {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $blue-basic;
+  background-color: $yellow-basic;
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+}

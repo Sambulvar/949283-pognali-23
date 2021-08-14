@@ -1,0 +1,29 @@
+.hitchhikers {
+  background: url("../../img/background-hitchhikers.png") top 64px left no-repeat, $blue-ultramarine;
+  padding: 82px 25px 74px;
+  position: relative;
+  z-index: 9;
+  margin-bottom: -30px;
+
+  @include borders-bottom-radius(25px);
+}
+
+.hitchhikers__title,
+.hitchhikers__text {
+  padding: 0 25px;
+}
+
+.hitchhikers__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white-basic;
+
+  &--accent {
+    font-weight: 700;
+  }
+}
+
+.hitchhikers__cards {
+  @include reset-list;
+}

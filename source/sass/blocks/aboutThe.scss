@@ -1,0 +1,17 @@
+.aboutThe {
+  background: url("../../img/background-aboutThe-mobile.png") no-repeat top 39px center, url("../../img/background_aboutThe_square.svg") no-repeat top 39px left, $blue-ultramarine;
+  color: $white-basic;
+  padding: 72px 50px 82px;
+
+  @include borders-bottom-radius(25px);
+}
+
+.aboutThe__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+
+  &--accent {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,30 @@
+.form-selection {
+  background-color: $yellow-basic;
+  color: $blue-basic-light;
+  margin: 20px 25px;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.form-selection__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0;
+  padding-bottom: 23px;
+}
+
+.form-selection__button {
+  width: 100%;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: $blue-basic;
+  background-color: $white-basic;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}

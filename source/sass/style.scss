@@ -1,1 +1,44 @@
-// Начните писать стили здесь
+// глобальные стили
+@import "utils/global";
+@import "utils/variables";
+// стили блоков
+@import "blocks/page-header.scss";
+@import "blocks/background-traveller.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/connectList.scss";
+@import "blocks/page-main.scss";
+@import "blocks/title.scss";
+@import "blocks/button.scss";
+@import "blocks/login.scss";
+@import "blocks/review.scss";
+@import "blocks/site-list.scss";
+@import "blocks/stepwiseGuide.scss";
+@import "blocks/aboutThe.scss";
+@import "blocks/destinations.scss";
+@import "blocks/countries.scss";
+@import "blocks/hitchhikers.scss";
+@import "blocks/card.scss";
+@import "blocks/level.scss";
+@import "blocks/flag.scss";
+@import "blocks/transportIcons.scss";
+@import "blocks/account";
+@import "blocks/tariffs.scss";
+@import "blocks/registration.scss";
+@import "blocks/contact-map.scss";
+@import "blocks/page-footer.scss";
+// начало блоков каталога
+@import "blocks/filter-countries.scss";
+@import "blocks/form-selection.scss";
+@import "blocks/preference.scss";
+@import "blocks/catalog-hitchhickers";
+@import "blocks/paginator.scss";
+// начало блоков формы
+@import "blocks/profile.scss";
+@import "blocks/myPlans.scss";
+@import "blocks/addPlan.scss";
+@import "blocks/step.scss";
+@import "blocks/details.scss";
+@import "blocks/calendar.scss";
+@import "blocks/route.scss";
+@import "blocks/entertainments.scss";

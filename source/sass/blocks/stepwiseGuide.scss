@@ -1,0 +1,44 @@
+.stepwiseGuide {
+  color: $blue-basic;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  background: linear-gradient($blue-basic 25%, $blue-ultramarine 25%);
+
+  @include reset-list;
+}
+
+.stepwiseGuide__number {
+  color: $white-basic;
+}
+
+.stepwiseGuide__item {
+  @include borders-top-radius;
+  padding: 22px 22px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.stepwiseGuide__item:nth-child(1) {
+  background-color: $orange-special;
+  padding-bottom: 42px;
+  margin-bottom: -20px;
+}
+
+.stepwiseGuide__item:nth-child(2) {
+  background-color: $yellow-brill;
+  padding-bottom: 42px;
+  margin-bottom: -20px;
+}
+
+.stepwiseGuide__item:nth-child(3) {
+  background-color: $yellow-special-dark;
+  padding-bottom: 42px;
+  margin-bottom: -20px;
+}
+
+.stepwiseGuide__item:nth-child(4) {
+  background-color: $yellow-basic;
+
+  @include borders-bottom-radius;
+}

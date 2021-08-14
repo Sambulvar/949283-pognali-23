@@ -1,0 +1,20 @@
+.account {
+  background-color: $grey-crayola;
+  padding: 60px 25px 38px 50px;
+  position: relative;
+  z-index: 8;
+  margin-bottom: -30px;
+
+  @include borders-bottom-radius(25px);
+}
+
+.account__buttonBusiness {
+  color: $blue-midnight;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  border: 0;
+  background: transparent;
+  margin-top: 46px;
+}

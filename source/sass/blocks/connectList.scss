@@ -1,0 +1,13 @@
+.connectList {
+  @include reset-list;
+}
+
+.connectList__tel,
+.connectList__mail {
+  color: $yellow-basic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+}

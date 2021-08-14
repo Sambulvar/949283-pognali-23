@@ -1,0 +1,17 @@
+.paginator {
+  padding: 0 25px 76px;
+}
+
+.paginator__button {
+  background-color: $white-basic;
+  border: none;
+  padding: 17px;
+
+  &--left {
+    @include borders-left-radius(20px);
+  }
+
+  &--right {
+    @include borders-right-radius(20px);
+  }
+}

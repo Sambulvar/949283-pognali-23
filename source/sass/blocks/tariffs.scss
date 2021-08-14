@@ -1,0 +1,27 @@
+.tariffs {
+  color: $grey-special;
+
+  @include reset-list;
+}
+
+.tariffs__number {
+  color: $white-basic;
+  display: table-cell;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+
+  &--first {
+    background-color: $orange-special;
+  }
+
+  &--second {
+    background-color: $yellow-special-dark;
+  }
+
+  &--third {
+    background-color: $yellow-basic;
+  }
+}

@@ -1,0 +1,52 @@
+.countries {
+  @include reset-list;
+}
+
+.countries__sketch {
+  position: relative;
+  padding: 25px;
+  background-color: $white-basic;
+  border-radius: 10px;
+  margin-top: -20px;
+}
+
+.countries__name {
+  position: relative;
+  margin: 0;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+
+  &--Thailand::before {
+    background-image: url("../../img/flag_Thailand_destinations.png");
+  }
+
+  &--France::before {
+    background-image: url("../../img/flag_France_destinations.png");
+  }
+
+  &--Czech::before {
+    background-image: url("../../img/flag_Czech_destinations.png");
+  }
+}
+
+.countries__name::before {
+  content: "";
+  width: 35px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  top: -37px;
+  left: 0;
+}
+
+.countries__cue {
+  color: $grey-special;
+  opacity: 0.3;
+}
+
+.countries__views {
+  color: $blue-basic;
+  opacity: 0.3;
+}
