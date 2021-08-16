@@ -1,0 +1,38 @@
+.alfavit-countries {
+  background-color: $grey-solitude;
+}
+
+.alfavit-countries__countryList {
+  color: $grey-special;
+
+  @include reset-list;
+}
+
+.alfavit-countries__letter {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: $blue-basic-light;
+  background-color: $white-basic;
+  display: table-cell;
+  width: 43px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.alfavit-countries__button {
+  background-color: $blue-hawkes;
+  color: $blue-ultramarine;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding: 12px 0;
+  text-align: center;
+}
