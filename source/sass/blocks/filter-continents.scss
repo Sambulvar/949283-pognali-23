@@ -1,0 +1,10 @@
+.filter-continents {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $blue-ultramarine;
+  background-color: $grey-solitude;
+
+  @include reset-list;
+}
