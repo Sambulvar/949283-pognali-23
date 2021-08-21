@@ -1,0 +1,25 @@
+.leadIn {
+  width: 100%;
+  background-color: $blue-basic;
+  outline: 2px solid $red-basic;
+  background-image: url("../../img/background_traveller_mobile.png"), url("../../img/background_globe_mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 154px, 50% -54px;
+}
+
+.leadIn__contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leadIn__tel,
+.leadIn__mail {
+  color: $yellow-basic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: auto;
+}

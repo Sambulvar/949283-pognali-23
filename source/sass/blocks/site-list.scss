@@ -1,3 +1,15 @@
 .site-list {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+
   @include reset-list;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: $blue-ultramarine;
 }
