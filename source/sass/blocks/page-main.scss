@@ -6,12 +6,22 @@
   color: $white-basic;
   margin: 0;
   background-color: $blue-purple;
-  padding-bottom: 12px;
+  //padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 70px;
+  }
 
   &--index {
     background-color: transparent;
     text-align: center;
     margin-bottom: 245px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 72px;
+      margin-bottom: 86px;
+    }
   }
 
   &--form {

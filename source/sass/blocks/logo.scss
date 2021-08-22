@@ -1,5 +1,20 @@
 .logo {
-  display: inline-block;
+  position: relative;
+  width: 96px;
+  height: 15px;
+  background: url("../../img/logo_mobile.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    height: 42px;
+    background: url("../../img/logo_tablet.svg") no-repeat right, url("../../img/logo_bag_tablet.svg") no-repeat, url("../../img/logo_figures_tablet.svg") no-repeat 32px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 50px;
+    background: url("../../img/logo_desktop.svg") no-repeat right, url("../../img/logo_bag_desktop.svg") no-repeat, url("../../img/logo_figures_desktop.svg") no-repeat 40px 0;
+  }
 }
 
 .logo--nav-active path {

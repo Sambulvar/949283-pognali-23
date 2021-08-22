@@ -1,5 +1,4 @@
 .main-nav {
-  outline: 2px solid $green-yellow;
   box-sizing: border-box;
   width: 100%;
   margin: 70px auto 0;
@@ -9,5 +8,26 @@
   left: 0;
   z-index: 1;
   background-color: $white-basic;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: auto;
+    background-color: transparent;
+    color: $white-basic;
+    padding: 0;
+    margin: 0 auto 0 130px;
+  }
+}
+
+.main-nav::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -105px;
+    width: 60px;
+    height: 2px;
+    background-color: $white-basic;
+  }
 }
 

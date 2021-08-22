@@ -3,6 +3,10 @@ let pageHeader = document.querySelector('.page-header');
 let logo = document.querySelector('.logo');
 let toggle = document.querySelector('.page-header__toggle')
 let backgroundTraveller = document.querySelector('.background-traveller');
+if (document.documentElement.clientWidth >=1440) {
+  mainNav.classList.remove('visually-hidden');
+}
+
 toggle.addEventListener('click',function(){
   if (mainNav.classList.contains('visually-hidden')) {
     mainNav.classList.remove('visually-hidden');

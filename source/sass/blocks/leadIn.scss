@@ -5,13 +5,39 @@
   background-image: url("../../img/background_traveller_mobile.png"), url("../../img/background_globe_mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 154px, 50% -54px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
 }
 
 .leadIn__contacts {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  position: relative;
+  top: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
+
+.leadIn__login {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: $blue-basic;
+  background-color: $yellow-basic;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
 
 .leadIn__tel,
 .leadIn__mail {
@@ -21,5 +47,36 @@
   line-height: 22px;
   text-decoration: none;
   text-transform: uppercase;
-  margin: auto;
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.leadIn__tel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("../../img/icon_phone_leadIn.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: $orange-special;
+}
+
+.leadIn__mail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("../../img/icon_mail_leadIn.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: $yellow-special-dark;
 }

@@ -6,6 +6,14 @@
   background-color: $blue-basic;
   margin: 0;
   padding: 50px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    font-size: 28px;
+    line-height: 33px;
+    padding-top: 0;
+    padding-bottom: 350px;
+  }
 }
 
 .review__author {
@@ -13,4 +21,9 @@
   line-height: 22px;
   font-style: normal;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }

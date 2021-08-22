@@ -7,9 +7,21 @@
   text-align: center;
 
   @include reset-list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .site-list__link {
   text-decoration: none;
   color: $blue-ultramarine;
+  padding: 0 17px;
+
+  @media (min-width: $desktop-width) {
+    color: $white-basic;
+  }
 }
