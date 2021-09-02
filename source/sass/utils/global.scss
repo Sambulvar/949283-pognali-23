@@ -78,6 +78,8 @@
 .page-body {
   font-family: "Blogger Sans", "Arial", sans-serif;
   position: relative;
+  display: grid;
+  grid-template-rows: auto auto auto;
 }
 
 // бордер-радиус снизу

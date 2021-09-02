@@ -1,11 +1,26 @@
 .hitchhikers {
-  background: url("../../img/background-hitchhikers.png") top 64px left no-repeat, $blue-ultramarine;
-  padding: 82px 25px 74px;
+  @include borders-bottom-radius(25px);
+  background: url("../../img/background-hitchhikers.png") top 84px left no-repeat, $blue-ultramarine;
+  padding: 118px 25px 74px;
   position: relative;
   z-index: 9;
-  margin-bottom: -30px;
+  margin-bottom: -50px;
 
-  @include borders-bottom-radius(25px);
+  @media (min-width: $tablet-width) {
+    @include borders-bottom-radius(50px);
+    padding: 191px 74px 52px;
+    //background: url("../../img/background_aboutThe_tablet.png") no-repeat top 144px right 8px, url("../../img/background_aboutThe_rectangle.svg") no-repeat top 96px left 40px, $blue-ultramarine;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include borders-bottom-radius(50px);
+    padding: 180px 60px 163px 130px;
+    //background: url("../../img/background_aboutThe_desktop.png") no-repeat top 0 right 8px, url("../../img/background_aboutThe_squareBig.svg") no-repeat top 0 left 60px, $blue-ultramarine;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    column-gap: 193px;
+  }
 }
 
 .hitchhikers__title,
@@ -22,8 +37,63 @@
   &--accent {
     font-weight: 700;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+  }
 }
 
 .hitchhikers__cards {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.hitchhikers__readMore {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 42%;
+    right: 33px;
+    background-image: url("../../img/polygon.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto auto auto 0;
+    width: 275px;
+    //position: relative;
+
+    //&::after {
+    //  content: "";
+    //  width: 14px;
+    //  height: 14px;
+    //  position: absolute;
+    //  top: 42%;
+    //  right: 33px;
+    //  background-image: url("../../img/polygon.svg");
+    //  background-repeat: no-repeat;
+    //}
+  }
 }

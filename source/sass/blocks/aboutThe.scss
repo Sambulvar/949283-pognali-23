@@ -1,9 +1,22 @@
 .aboutThe {
-  background: url("../../img/background-aboutThe-mobile.png") no-repeat top 39px center, url("../../img/background_aboutThe_square.svg") no-repeat top 39px left, $blue-ultramarine;
+  @include borders-bottom-radius(25px);
   color: $white-basic;
   padding: 72px 50px 82px;
 
-  @include borders-bottom-radius(25px);
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 137px 0 52px 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 42px 0 163px 130px;
+  }
 }
 
 .aboutThe__text {
@@ -13,5 +26,48 @@
 
   &--accent {
     font-weight: 700;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      line-height: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      line-height: 24px;
+    }
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 34px;
+  }
+}
+
+.aboutThe__readMore {
+  position: relative;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 274px;
+  }
+}
+
+.aboutThe__readMore::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 42%;
+  right: 33px;
+  background-image: url("../../img/polygon.svg");
+  background-repeat: no-repeat;
 }

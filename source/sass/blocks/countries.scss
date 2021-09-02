@@ -1,5 +1,52 @@
 .countries {
   @include reset-list;
+
+  @media (min-width: $desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-right: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.countries__item {
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    padding-right: 185px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 140px;
+  }
+}
+
+.countries__item:nth-child(1) {
+  background: url("../../img/photo_Thailand_tablet.png") no-repeat right, $white-basic;
+}
+
+.countries__item:nth-child(2) {
+  background: url("../../img/photo_France_tablet.png") no-repeat right, $white-basic;
+}
+
+.countries__item:nth-child(3) {
+  background: url("../../img/photo_Czech_tablet.png") no-repeat right, $white-basic;
+}
+
+.countries__img {
+  @include borders-top-radius;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .countries__sketch {
@@ -8,14 +55,28 @@
   background-color: $white-basic;
   border-radius: 10px;
   margin-top: -20px;
-}
 
-.countries__name {
-  position: relative;
-  margin: 0;
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    background-color: transparent;
+  }
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 3px;
+    position: absolute;
+    top: -12px;
+    left: 25px;
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+      right: -16px;
+      left: auto;
+    }
+  }
 
   &--Thailand::before {
     background-image: url("../../img/flag_Thailand_destinations.png");
@@ -30,15 +91,12 @@
   }
 }
 
-.countries__name::before {
-  content: "";
-  width: 35px;
-  height: 24px;
-  display: inline-block;
-  border-radius: 3px;
-  position: absolute;
-  top: -37px;
-  left: 0;
+.countries__name {
+  position: relative;
+  margin: 0;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
 }
 
 .countries__cue {

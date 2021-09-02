@@ -1,15 +1,34 @@
 .destinations {
+  @include borders-bottom-radius(25px);
   background-color: $grey-basic-light;
-  padding: 72px 25px 54px;
-  margin-bottom: -30px;
+  padding: 121px 25px 34px;
+  margin-bottom: -50px;
   position: relative;
   z-index: 10;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  box-sizing: border-box;
 
-  @include borders-bottom-radius(25px);
+  @media (min-width: $tablet-width) {
+    @include borders-bottom-radius(50px);
+    padding: 103px 75px 80px;
+    background: url("../../img/background_destinations_flags.png") top 160px right 40px no-repeat, url("../../img/background_destinations_square.svg") top 486px left 40px no-repeat, $grey-basic-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 160px 130px 138px;
+    background: url("../../img/background_destinations_flags.png") top 140px right 40px no-repeat, url("../../img/background_destinations_square.svg") top 140px left 40px no-repeat, $grey-basic-light;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+  }
 }
 
 .destinations__title {
   padding: 0 25px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .destinations__text {
@@ -20,8 +39,26 @@
   font-size: 16px;
   line-height: 22px;
   color: $grey-special;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    width: 50%;
+    padding: 57px 33px 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 0 98px;
+  }
 }
 
 .destinations__button {
-  margin-top: 25px;
+  margin-top: 15px;
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 275px;
+    min-height: 80px;
+    margin: auto auto auto 0;
+  }
 }

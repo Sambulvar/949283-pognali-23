@@ -1,7 +1,6 @@
 .leadIn {
   width: 100%;
   background-color: $blue-basic;
-  outline: 2px solid $red-basic;
   background-image: url("../../img/background_traveller_mobile.png"), url("../../img/background_globe_mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 154px, 50% -54px;
@@ -9,6 +8,21 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: auto auto auto;
+    background-color: $blue-purple;
+    background-image: url("../../img/background_traveller_tablet.png"), url("../../img/background_globe_tablet.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 320px, 50% 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 60px 120px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    background-image: url("../../img/background_traveller_desktop.png"), url("../../img/background_globe_desktop.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 110px, 50% 0;
   }
 }
 
